@@ -96,7 +96,7 @@ npm install -g json-server
 
 ````bash
 
-json-server --watch db.json --port 3001
+npm run server
 ````
 #### Execute a aplicação:
 
@@ -104,7 +104,7 @@ json-server --watch db.json --port 3001
 
 npm start
 ````
-### Abra o navegador e acesse http://localhost:3000 para a aplicação e http://localhost:3001 para a API.
+### Abra o navegador e acesse http://localhost:3000 para a aplicação e http://localhost:5000 para a API.
 
 ### Contribuições
 Sinta-se à vontade para enviar pull requests ou abrir issues para melhorias e correções.
