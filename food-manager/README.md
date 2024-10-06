@@ -11,6 +11,8 @@ Uma aplicação web para gestão de alimentos comprados e estocados em casa. Per
 
 ## Estrutura do Projeto
 
+
+```
 src/
 │
 ├── components/
@@ -39,9 +41,8 @@ src/
 │
 └── App.js                     // Componente principal da aplicação
 
+```
 
-markdown
-Copiar código
 
 ## Funcionalidades
 
@@ -58,53 +59,60 @@ Certifique-se de que você tenha o Node.js instalado. Você pode baixar a últim
 
 ### Passos
 
-1. Clone o repositório:
+#### Clone o repositório:
 
-   ```bash
-   git clone https://github.com/seu_usuario/gestao-de-alimentos.git
-Navegue até o diretório do projeto:
+````bash
+git clone https://github.com/seu_usuario/gestao-de-alimentos.git
+````
+#### Navegue até o diretório do projeto:
 
-bash
-Copiar código
+````bash
+
 cd gestao-de-alimentos
-Instale as dependências:
+````
+#### Instale as dependências:
 
-bash
-Copiar código
+````bash
+
 npm install
-Suba o servidor JSON:
+````
+#### Suba o servidor JSON:
 
 Para usar o json-server, instale-o globalmente se ainda não o fez:
 
-bash
-Copiar código
-npm install -g json-server
-Crie um arquivo db.json na raiz do projeto e adicione um exemplo de estrutura de dados:
+````bash
 
-json
-Copiar código
+npm install -g json-server
+````
+#### Crie um arquivo db.json na raiz do projeto e adicione um exemplo de estrutura de dados:
+
+````json
+
 {
   "foods": []
 }
-Inicie o servidor JSON:
+````
+#### Inicie o servidor JSON:
 
-bash
-Copiar código
+````bash
+
 json-server --watch db.json --port 3001
-Execute a aplicação:
+````
+#### Execute a aplicação:
 
-bash
-Copiar código
+````bash
+
 npm start
-Abra o navegador e acesse http://localhost:3000 para a aplicação e http://localhost:3001 para a API.
+````
+### Abra o navegador e acesse http://localhost:3000 para a aplicação e http://localhost:3001 para a API.
 
-Contribuições
+### Contribuições
 Sinta-se à vontade para enviar pull requests ou abrir issues para melhorias e correções.
 
 Licença
 Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
 
-Contato
+### Contato
 Se você tiver alguma dúvida ou sugestão, entre em contato:
 
 Email: dossantosgss@gmail.com
