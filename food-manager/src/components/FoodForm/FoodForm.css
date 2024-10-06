@@ -1,0 +1,77 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  
+}
+.form-title {
+  
+  font-size: 24px; /* Tamanho maior para o título */
+  font-weight: bold; /* Negrito */
+  color: #333; /* Cor do texto */
+  
+}
+
+.form {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 30px;
+  border-radius: 12px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
+  width: 600px;
+  max-width: 100%; /* Garantir que não exceda a largura do contêiner */
+  transition: transform 0.2s; /* Efeito de transição suave */
+}
+
+.form:hover {
+  transform: translateY(-2px); /* Levantar o formulário ao passar o mouse */
+}
+
+.form div {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Negrito para as labels */
+  color: #333; /* Cor do texto */
+}
+
+.form input,
+.form select {
+  width: 100%; /* Ajustar para 100% do contêiner */
+  padding: 12px; /* Padding um pouco maior */
+  border: 1px solid #ddd; /* Borda mais suave */
+  border-radius: 6px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Para que o padding não afete a largura total */
+  font-size: 16px; /* Aumentar a fonte para melhor legibilidade */
+  transition: border-color 0.2s; /* Efeito de transição na borda */
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #6200ea; /* Cor ao focar */
+  outline: none; /* Remover outline padrão */
+}
+
+.form input[type="file"] {
+  width: auto; /* Permitir que o input de arquivo tenha seu tamanho natural */
+}
+
+.form button {
+  background-color: #6200ea; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  cursor: pointer;
+  width: 40px; /* Ajustar largura para ícone */
+  height: 40px; /* Ajustar altura para ícone */
+  display: flex; /* Para centralizar o ícone */
+  align-items: center; /* Centralizar verticalmente */
+  justify-content: center; /* Centralizar horizontalmente */
+  border-radius: 6px; /* Bordas arredondadas nos botões */
+  transition: background-color 0.2s; /* Transição suave na cor de fundo */
+}
+
+.form button:hover {
+  background-color: #3700b3; /* Cor mais escura ao passar o mouse */
+}

@@ -1,0 +1,38 @@
+.food-list-container {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 30px;
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  margin: 20px auto; /* Margem automática para centralizar */
+  max-width: 600px; /* Largura máxima */
+  transition: transform 0.2s; /* Efeito de transição suave */
+}
+.food-list-container:hover {
+  transform: translateY(-2px); /* Levantar o lista ao passar o mouse */
+}
+
+.food-list-title {
+  font-size: 24px; /* Tamanho maior para o título */
+  font-weight: bold; /* Negrito */
+  color: #333; /* Cor do texto */
+}
+
+.food-list-button {
+  background-color: #6200ea; /* Cor do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  padding: 10px 15px; /* Padding para o botão */
+  border-radius: 6px; /* Bordas arredondadas */
+  cursor: pointer; /* Mão ao passar o mouse */
+  transition: background-color 0.2s; /* Transição suave */
+}
+
+.food-list-button:hover {
+  background-color: #3700b3; /* Cor mais escura ao passar o mouse */
+}
+
+.food-list {
+  list-style: none; /* Remover marcadores da lista */
+  padding: 0; /* Remover padding */
+  margin-top: 20px; /* Margem entre o título e a lista */
+}

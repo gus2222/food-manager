@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Gestão de Alimentos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação web para gestão de alimentos comprados e estocados em casa. Permite adicionar, editar e remover alimentos, além de exibir uma lista de itens armazenados.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- React
+- CSS
+- JSON Server (ou outra API) para manipulação de dados
+- Hooks do React (`useState`, `useEffect`)
 
-### `npm start`
+## Estrutura do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+src/
+│
+├── components/
+│   ├── Header/
+│   │   ├── Header.js          // Componente para o cabeçalho da aplicação
+│   │   └── Header.css         // Estilos do cabeçalho
+│   │
+│   ├── Footer/
+│   │   ├── Footer.js          // Componente para o rodapé da aplicação
+│   │   └── Footer.css         // Estilos do rodapé
+│   │
+│   ├── FoodForm/
+│   │   ├── FoodForm.js        // Formulário para adicionar e editar alimentos
+│   │   └── FoodForm.css       // Estilos do formulário
+│   │
+│   ├── FoodList/
+│   │   ├── FoodList.js        // Lista de alimentos adquiridos
+│   │   └── FoodList.css       // Estilos da lista de alimentos
+│   │
+│   └── FoodItem/
+│       ├── FoodItem.js        // Componente para exibir cada item da lista
+│       └── FoodItem.css       // Estilos do item da lista
+│
+├── styles/
+│   ├── App.css                // Estilos gerais da aplicação
+│
+└── App.js                     // Componente principal da aplicação
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+markdown
+Copiar código
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Funcionalidades
 
-### `npm run build`
+- **Adicionar Alimentos:** Permite cadastrar novos alimentos com nome, quantidade, unidade de medida e imagem.
+- **Editar Alimentos:** Permite editar informações de alimentos já cadastrados.
+- **Remover Alimentos:** Permite remover alimentos da lista.
+- **Listar Alimentos:** Exibe uma lista de todos os alimentos cadastrados com suas respectivas informações.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como Executar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Certifique-se de que você tenha o Node.js instalado. Você pode baixar a última versão em [nodejs.org](https://nodejs.org/).
 
-### `npm run eject`
+### Passos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone o repositório:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/seu_usuario/gestao-de-alimentos.git
+Navegue até o diretório do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copiar código
+cd gestao-de-alimentos
+Instale as dependências:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copiar código
+npm install
+Suba o servidor JSON:
 
-## Learn More
+Para usar o json-server, instale-o globalmente se ainda não o fez:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copiar código
+npm install -g json-server
+Crie um arquivo db.json na raiz do projeto e adicione um exemplo de estrutura de dados:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+json
+Copiar código
+{
+  "foods": []
+}
+Inicie o servidor JSON:
 
-### Code Splitting
+bash
+Copiar código
+json-server --watch db.json --port 3001
+Execute a aplicação:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+bash
+Copiar código
+npm start
+Abra o navegador e acesse http://localhost:3000 para a aplicação e http://localhost:3001 para a API.
 
-### Analyzing the Bundle Size
+Contribuições
+Sinta-se à vontade para enviar pull requests ou abrir issues para melhorias e correções.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Licença
+Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
 
-### Making a Progressive Web App
+Contato
+Se você tiver alguma dúvida ou sugestão, entre em contato:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: dossantosgss@gmail.com
